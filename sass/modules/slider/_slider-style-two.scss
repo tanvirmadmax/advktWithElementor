@@ -1,0 +1,189 @@
+.slider-area {
+  &.style-2 {
+    position: relative;
+    z-index: 2;
+
+    .slider-overlay {
+      background-image: linear-gradient( 90deg, rgb(28, 29, 32, 0.41) 0%, #1C1D20 71.51%);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+    .slider-user-main-wrapper {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+      .slider-wrapper {
+        .slick-dots {
+          @include rmaxwd(991) {
+            display: block !important;
+          }
+
+          @include sm {
+            display: none !important;
+          }
+        }
+        .single-slider-wrapper {
+          .single-slider {
+            padding-top: 40px;
+            padding-bottom: 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative;
+            z-index: 2;
+
+            @include sm {
+              padding-top: 80px;
+            }
+            .slider-content-wrapper {
+              position: relative;
+              margin-top: -40px;
+
+              .shape {
+                position: absolute;
+                right: 20px;
+                top: -23px;
+              }
+              .signature-shape {
+                img {
+                  margin-left: auto;
+                  margin-right: 140px;
+                }
+              }
+              .slider-content {
+                gap: 0;
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+                margin-top: 0;
+                margin-right: 0;
+                transform: translateX(0);
+
+                @include sm {
+                  text-align: center;
+                  align-items: center;
+                }
+                .short-title {
+                  font-size: 24px;
+                  color: $blue-color;
+                  font-weight: 600;
+                  margin-bottom: 10px;
+                }
+                .slider-title {
+                  font-size: 75px;
+                  line-height: initial;
+                  color: $white;
+                  margin-bottom: 25px;
+                  font-weight: 600;
+
+                  @include sm {
+                    font-size: 38px;
+                    line-height: 54px;
+                  }
+                  @include md {
+                    font-size: 40px;
+                    line-height: 54px;
+                  }
+                  @include lg {
+                    font-size: 56px;
+                    line-height: 74px;
+                  }
+                }
+                .slider-short-desc {
+                  font-size: 22px;
+                  font-weight: 600;
+                  font-family: $body-font;
+                  color: $white;
+                  line-height: initial;
+
+                  br {
+                    @include sm {
+                      display: none;
+                    }
+                    @include md {
+                      display: none;
+                    }
+                    @include lg {
+                      display: none;
+                    }
+                  }
+                }
+                .slider-btn-wrapper {
+                  display: flex;
+                  gap: 18px;
+                  margin-top: 65px;
+
+                  .play-btn {
+                    width: 66px;
+                    height: 66px;
+                    border-radius: 100%;
+                    border: 2px solid $primary-color;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 18px;
+                    color: $black;
+                    font-weight: 600;
+                    animation: ripple 4s infinite;
+                    box-shadow: 0 0 0 0 rgba(33, 173, 224, 0.8);
+                  }
+                }
+              }
+            }
+            .slider-image {
+              text-align: right;
+              position: relative;
+              margin-right: -170px;
+
+              @include xs {
+                width: 100% !important;
+              }
+              @include sm {
+                margin-right: 0;
+                width: 400px;
+              }
+              img {
+                display: inline-block;
+              }
+
+              .company-award {
+                position: absolute;
+                bottom: 0;
+                left: 100%;
+                transform: translate(-50%, -50%);
+
+                @include lg {
+                  left: 90%;
+                }
+                @include md {
+                  transform: translate(-94%, -0%);
+                }
+                @include rmaxwd(720) {
+                  transform: translate(-120%, -50%);
+                }
+                .icon {
+                  width: 150px;
+                  height: 150px;
+                  box-shadow: 0 5px 90px 0 rgba(2, 24, 93, 0.12);
+                  background-color: $blue-color;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                }
+
+              }
+            }
+          }
+        }
+      }
+  }
+}

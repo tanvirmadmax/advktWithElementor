@@ -1,0 +1,125 @@
+.faq-area {
+    &.style-5 {
+        padding: 140px 0;
+
+        @include sm {
+            padding: 80px 0;
+        }
+        @include md {
+            padding: 100px 0;
+        }
+
+        .faq-img {
+            position: relative;
+            width: 100%;
+            height: auto;
+            margin-top: 5px;
+
+            .shape-img {
+                position: absolute;
+                right: 2px;
+                bottom: -25px;
+
+                @include xs {
+                   display: none;
+                }
+                @include sm {
+                    left: unset;
+                    right: 0;
+                }
+                @include  md{
+                    left: 321px;
+                    right: unset;
+                }
+                @include  lg{
+                    left: unset;
+                    right: 0;
+                }
+                @include  xl{
+                    left: unset;
+                    right: 0;
+                }
+            }
+        }
+        .section-title {
+            margin-bottom: 50px;
+            margin-top: 5px;
+
+            @include sm {
+                margin-bottom: 30px;
+                margin-top: 0;
+            }
+
+            .desc {
+                color: $black;
+                font-size: 18px;
+                margin-bottom: 0;
+                line-height: initial;
+            }
+        }
+    }
+
+    .accordion-item-body {
+        p {
+            font-family: $syne-font;
+        }
+    }
+}
+
+.faq-about {
+    padding-top: 115px;
+    margin-bottom: 140px;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+
+    @include sm {
+        padding-top: 0;
+        padding-bottom: 80px;
+        margin-bottom: 0;
+    }
+    @include md {
+        padding: 100px 0;
+        margin-bottom: 0;
+    }
+
+    .section-title {
+        margin-bottom: 60px;
+        .desc {
+            line-height: initial;
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+    }
+    .comment-respond {
+        border-radius: 10px;
+        background: var(--White, #FFF);
+        box-shadow: 0px 4px 30px 0px rgba(234, 234, 234, 0.25);
+        padding: 60px 55px 53px 55px;
+        margin-top: 0;
+
+        .theme-btn {
+            padding: 21px 71px 16px 65px;
+            color: $white;
+        }
+    }
+    .video-popup-btn {
+        margin-top: 0;
+        left: 29%;
+
+        @include sm {
+            left: 50%;
+        }
+
+        .video-play {
+            width: 150px;
+            height: 150px;
+
+            @include sm {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}

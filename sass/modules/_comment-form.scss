@@ -1,0 +1,284 @@
+.post-comments-form {
+  .contacts-message {
+    margin-top: 10px;
+  }
+}
+/*Comment Input Filed*/
+
+.post-comments-title {
+  .sub-title {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: $heading-font;
+    color: $primary-color;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 28px;
+    font-weight: 600;
+    color: $secondary-color;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    @include sm {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    small {
+      font-size: 16px;
+      font-family: $body-font;
+      color: $primary-color;
+    }
+  }
+}
+.comment-respond {
+  padding: 50px;
+  position: relative;
+
+  @include sm {
+    padding: 30px;
+  }
+  p {
+    // display: inline-flex;
+    margin: 0;
+    .wpcf7-spinner{
+      position: absolute;
+    }
+  }
+
+  .contacts-email,
+  .contacts-name,
+  .single-input-field,
+  .contacts-message {
+    margin-bottom: 33px;
+    position: relative;
+    // display: inline-flex;
+    br{
+      display: none;
+    }
+
+    label {
+      position: absolute;
+      top: 0;
+      left: 20px;
+      transform: translateY(-50%);
+      background: $white;
+      font-size: 18px;
+      color: $black;
+      padding: 0 10px;
+      z-index: 1;
+    }
+  }
+  //label {
+  //  display: block;
+  //  font-size: 16px;
+  //  font-weight: 600;
+  //  color: $black-300;
+  //  margin-bottom: 12px;
+  //}
+  .checkbox-field-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+    padding: 15px 0;
+
+    p {
+      margin: 0;
+    }
+
+    .single-checkbox-field {
+      margin-bottom: 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: $body-font;
+
+    }
+  }
+  .comment-form-cookies-consent {
+    display: none;
+  }
+  input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+  input,
+  select {
+    padding: 0 27px;
+    height: 70px;
+    width: 100%;
+    color: $black-300;
+    opacity: 1;
+    border: 1px solid $gray-300 !important;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: transparent;
+    font-family: $body-font !important;
+  }
+  input[type="submit"] {
+    height: 70px;
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: $white;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  *::-webkit-input-placeholder {
+    color: $black-300;
+  }
+  *:-moz-placeholder {
+    color: $black-300;
+    opacity: 1;
+  }
+  *::-moz-placeholder {
+    color: $black-300;
+    opacity: 1;
+  }
+  *:-ms-input-placeholder {
+    color: $black-300;
+  }
+  *::-ms-input-placeholder {
+    color: $black-300;
+  }
+  *::placeholder {
+    color: $black-300;
+  }
+
+
+  textarea {
+    resize: vertical;
+    padding: 27px;
+    width: 100%;
+    color: $black-300;
+    border: 1px solid $gray-300 !important;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: transparent;
+    font-family: $body-font !important;
+    height: 140px;
+    margin-bottom: 12px;
+  }
+  input:focus,
+  textarea:focus,
+  .form-select:focus{
+    outline: none !important;
+    box-shadow: none;
+    border-color: $primary-color !important;
+    transition: all 0.4s ease 0s;
+  }
+}
+
+
+.comment-respond {
+
+  &.style-2 {
+    margin: 0;
+    padding: 0;
+
+    .contacts-email,
+    .contacts-name,
+    .single-input-field,
+    .contacts-message {
+      margin-bottom: 0;
+
+      label {
+          background-color: $black-100;
+          color: $white;
+
+      }
+    }
+    .comment-respond-wrapper {
+      margin-left: 300px;
+      padding: 53px 0 33px 70px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      position: relative;
+      z-index: 2;
+
+      @include lg{
+        padding: 53px 0 60px 70px;
+      }
+      @include rmaxwd(767) {
+        padding: 40px;
+        margin-left: 0 !important;
+      }
+      @include rmaxwd(1549) {
+        margin-left: 50px;
+      }
+      &:before {
+        position: absolute;
+        content: "";
+        width: 9999px;
+        height: 100%;
+        left: 0;
+        background-color: $black-100;
+        top: 0;
+        margin-right: 10px;
+        border-radius: 20px;
+        z-index: -1;
+      }
+      .form-title {
+        color: $white;
+        font-size: 45px;
+        font-weight: 600;
+        line-height: initial;
+
+        @include sm {
+          font-size: 28px;
+          line-height: initial;
+        }
+        @include md {
+          font-size: 34px;
+          line-height: initial;
+        }
+        @include lg {
+          font-size: 40px;
+          line-height: initial;
+        }
+      }
+    }
+    .form-field-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+
+      .single-input-field {
+        width: 23%;
+        flex-shrink: 0;
+
+        @include rmaxwd(767) {
+          width: 100% !important;
+        }
+        @include rmaxwd(1700) {
+          width: auto;
+        }
+
+        .btn {
+          border-radius: initial;
+          font-size: 18px;
+          font-weight: 500;
+          padding: 22px 58px;
+          color: $white;
+          background: $primary-color;
+        }
+      }
+    }
+    input,
+    select,
+    textarea {
+      border-color: #2C353E !important;
+      margin-bottom: 0;
+    }
+  }
+}

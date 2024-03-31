@@ -1,0 +1,154 @@
+.info-card {
+    &.style-two {
+        padding: 65px 62px;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 12px;
+        top: 0;
+        z-index: 2;
+        @include transition;
+        overflow: hidden;
+        margin-bottom: 24px;
+        border: 1px solid rgb(223, 226, 233);
+
+        @include xs {
+            padding: 30px;
+        }
+        @include sm {
+            padding: 34px;
+        }
+        @include md {
+            padding: 30px;
+        }
+        @include lg {
+            padding: 45px;
+        }
+        @include xl {
+            padding: 35px;
+        }
+        &:before {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            background-color: $black-50;
+            z-index: -1;
+            content: "";
+            transform: translate(-50%, -50%) rotate(0deg);
+            transition: 0.8s;
+        }
+        &:after {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: $black;
+            z-index: -2;
+            content: "";
+            @include transition;
+            border: 0;
+        }
+        .more-btn-wrapper {
+            text-align: right;
+            visibility: hidden;
+            opacity: 0;
+            margin-right: -30px;
+            @include transition;
+            transform: translate(-30%, 100%) scale(0.3);
+            @include rmaxwd(991) {
+                margin-right: unset;
+            }
+        }
+        .more-btn {
+            width: 72px;
+            height: 72px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $primary-color;
+            border-radius: 50%;
+            font-size: 24px;
+            font-weight: 600;
+            color: $white;
+            @include transition;
+
+            @include md {
+                width: 60px;
+                height: 60px;
+                font-size: 22px;
+            }
+            @include sm {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+            i {
+                transform: rotate(-40deg);
+                @include transition;
+            }
+
+            &:hover {
+                background-color: $blue-color;
+                @include transition;
+
+                i {
+                    transform: rotate(0);
+                    @include transition;
+                }
+            }
+        }
+
+        &:hover {
+            @include transition;
+            top: -10px;
+            &:before {
+                visibility: hidden;
+                opacity: 0;
+                transition: 0.8s;
+            }
+            &:after {
+                background-color: rgb(53, 54, 61);
+                opacity: 0.702;
+                @include transition;
+            }
+            .more-btn-wrapper {
+                visibility: visible;
+                opacity: 1;
+                transform: translate(0) scale(1);
+                @include transition;
+            }
+            .content {
+                .desc {
+                    color: $white;
+                }
+            }
+        }
+        .title-wrapper {
+            gap: 40px;
+
+            .icon {
+                width: 97px;
+                height: 97px;
+            }
+            .title {
+                line-height: 36px;
+                color: $white;
+
+                a {
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+        .content {
+            .desc {
+                line-height: 26px;
+            }
+        }
+    }
+}

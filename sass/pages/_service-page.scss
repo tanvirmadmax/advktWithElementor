@@ -1,0 +1,317 @@
+
+// Service Details Page
+.service-details-page {
+    padding: 140px 0;
+
+    @include sm{
+        padding: 80px 0;
+    }
+    @include md{
+        padding: 100px 0;
+    }
+    .details-content {
+        margin-bottom: 40px;
+        .feature-image {
+            overflow: hidden;
+            margin-bottom: 50px;
+
+            img {
+                width: 100%;
+            }
+        }
+        .text {
+            margin-bottom: 30px;
+            .title {
+                font-size: 45px;
+                font-weight: 600;
+                line-height: initial;
+                margin-bottom: 24px;
+                color: $black;
+
+                @include xs {
+                    font-size: 22px !important;
+                }
+                @include sm {
+                    font-size: 32px;
+                }
+                @include md {
+                    font-size: 38px;
+                }
+            }
+            p {
+                font-size: 16px;
+                line-height: 29px;
+            }
+        }
+
+        .member-court {
+            padding: 26px 112px 27px 41px;
+            border-left: 3px solid #CDB091;
+            margin-bottom: 50px;
+            @include xs {
+                margin-bottom: 30px;
+            }
+            @include sm {
+                padding: 20px 32px;
+                border-top: 3px solid #CDB091;
+                border-bottom: 3px solid #CDB091;
+                border-left: 0;
+            }
+            .desc {
+                font-family: $heading-font;
+                font-size: 20px;
+                font-weight: 600;
+                color: $black;
+                margin-bottom: 0;
+
+                @include sm {
+                    font-size: 16px;
+                }
+                @include md {
+                    font-size: 16px;
+                }
+            }
+        }
+        p {
+            font-size: 16px;
+            line-height: 29px;
+            margin-bottom: 0;
+        }
+    }
+    .overview-item {
+        position: relative;
+        .list-item {
+            margin-bottom: 50px;
+            display: flex;
+            gap: 189px;
+            @include xs {
+                flex-wrap: wrap;
+                gap: 0;
+            }
+            @include sm {
+                gap: 14px;
+            }
+            @include md {
+                gap: 50px;
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                margin-bottom: 0;
+                li {
+                    gap: 15px;
+                    align-items: center;
+                    padding-top: 0;
+                    .icon-img {
+                        width: 20px;
+                        height: 20px;
+                        flex-shrink: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    span {
+                        color: #222;
+                    }
+                }
+            }
+        }
+        .image {
+
+        }
+    }
+    .accordion-wrapper .accordion-list-item .accordion-item-body {
+        margin-bottom: 26px;
+        margin-right: 4px;
+        p {
+            color: #222;
+            font-family: "Syne", sans-serif;
+            @include sm {
+                font-size: 14px;
+            }
+        }
+    }
+    .accordion-wrapper .accordion-list-item .accordion-head {
+        .accordion-title {
+            @include sm {
+             font-size: 16px;
+            }
+         }
+    }
+    
+    
+    .service-sidebar {
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        @include sm {
+            margin-top: 40px;
+        }
+        @include md {
+            margin-top: 40px;
+        }
+
+        .service-categories {
+            padding: 50px 0px;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            background: #FAF8F7;      
+
+                .title {
+                    font-size: 35px;
+                    font-weight: 600;
+                    line-height: initial;
+                    color: $black;
+                    padding-left: 40px;
+                    padding-bottom: 32px;
+                    margin-bottom: 0;
+                    @include sm {
+                        font-size: 28px;
+                    }
+                }
+
+                ul {
+                    list-style: none;
+                    padding-left: 0;
+                    margin-bottom: -11px;
+
+                    li {
+                        border-top: 1px solid rgba(0, 0, 0, 0.15);
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important;
+                        width: 100%;
+                        padding: 0;
+                        margin-bottom: 10px;
+                        a {
+                            display: inline-flex;
+                            align-items: center;
+                            flex-shrink: 0;
+                            color: $black;
+                            font-family: $heading-font;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            width: 100%;
+                            padding: 19px 40px;
+                            @include transition;
+
+                            @include sm {
+                                font-size: 18px;
+                            }
+
+                            i {
+                                color: $primary-color;
+                                font-size: 24px;
+                                font-weight: 600;
+                                @include transition;
+                            }
+                           
+                            &:hover {
+                                color: $primary-color;
+
+                                i {
+                                    color: $primary-color;
+                                    @include transition;
+                                }
+                            }
+                        }
+                        &.active {
+
+                            a {
+                                color: $primary-color;
+
+                                i {
+                                    color: $primary-color;
+                                }
+                            }
+                        }
+                    }
+                }
+        }
+        .service-promotion {
+            position: relative;
+            overflow: hidden;
+        
+            .contact-text{
+                position: absolute;
+                bottom: 0;
+                padding: 0 0 30px 40px;
+        
+                .number {
+                    font-size: 35px;
+                    font-weight: 600;
+                    line-height: initial;
+                    font-family: $heading-font;
+                    color: $white;
+                    @include sm {
+                        font-size: 28px;
+                    }
+                }
+                .text {
+                    font-size:  16px;
+                    line-height: 29px;
+                    color: $white;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+
+// FAQ Area
+.faq-area {
+    &.style-3 {
+        margin-top: 50px;
+        .faq-title {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.feature-area {
+    &.style-2 {
+        padding: 140px 0;
+
+        @include md {
+          padding: 100px 0;
+        }
+        @include sm {
+          padding: 80px 0;
+        }
+
+        .info-card {
+            background: $white;
+            border: 1px solid rgba(0, 0, 0, 0.10);
+
+            .title {
+                color: $black;
+            }
+            .desc {
+                color: $text-color;
+            }
+            .thumbnail-wrapper {
+                border-top: 1px solid rgba(0, 0, 0, 0.15);
+            }
+            .icon {
+                width: 64px;
+                height: 65px;
+                @include transition;
+                img {
+                    @include transition;
+                }
+            }
+            &:hover {
+                .icon {
+                    height: 0;
+                    @include transition;
+                }
+            }
+        }
+    }
+}

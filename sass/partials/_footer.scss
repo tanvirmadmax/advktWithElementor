@@ -1,0 +1,412 @@
+.footer {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+
+  &.style-1 {
+    background-color: $black-50;
+  }
+  .footer-sec {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    position: relative;
+
+    @include sm {
+      padding-top: 80px;
+    }
+    @include md {
+      padding-top: 100px;
+    }
+
+    .footer-sec-bg {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+  .widget-menu-wrapper {
+    padding: 0 60px;
+
+
+    @include rmaxwd(991) {
+      padding: 0;
+    }
+    @include lg {
+      padding: 0 50px;
+    }
+    @include xl {
+      padding: 0 60px;
+    }
+  }
+
+  //footer Background
+  .footer-bg {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+}
+.footer-widget-title {
+  font-family: $heading-font;
+  font-size: 21px;
+  line-height: 26px;
+  color: $white;
+  position: relative;
+  margin-bottom: 35px;
+  font-weight: 600;
+
+  @include sm {
+    margin-bottom: 20px;
+  }
+  @include md {
+    margin-bottom: 25px;
+  }
+}
+.footer-widget {
+  margin-bottom: 30px;
+
+  @include rmaxwd(991) {
+    margin-bottom: 40px;
+  }
+  ul {
+    padding-left: 0;
+  }
+  .footer-logo {
+    margin-bottom: 40px;
+    margin-top: -25px;
+  }
+  // Footer Latest Post
+  &.widget_boomdevs-latest-posts-footer {
+    margin-top: -5px;
+  }
+  // Footer Instagram
+  &.zoom-instagram-widget {
+    @include rmaxwd(767) {
+      margin-bottom: 0;
+      margin-top: -10px;
+    }
+  }
+  // Footer About Info
+  &.widget_boomdevs_contact_info_widget {
+    @include rmaxwd(767) {
+      margin-bottom: 16px;
+    }
+  }
+
+  .widget-instagram-feed {
+    @media only screen and (min-width: 992px) and (max-width: 1399px) {
+      width: 170px;
+    }
+  }
+  // Footer Info Widget
+  .footer-widget-info {
+    p {
+      color: $white;
+      margin-bottom: 30px;
+      font-family: $roboto-font;
+    }
+    .footer-logo {
+      margin-bottom: 30px;
+      display: inline-block;
+      margin-top: -25px;
+    }
+    .info-form-and-social-icon {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      .subscribe-form-widget {
+        border-radius: 6px;
+        .single-field {
+          input {
+            height: 60px;
+          }
+        }
+      }
+      .social-profile {
+        margin-top: 0;
+      }
+    }
+    .social-profile {
+      display: flex;
+      gap: 15px;
+      margin-top: 30px;
+
+      a {
+        color: $white;
+      }
+    }
+    @include sm {
+      .info-form-and-social-icon {
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+      }
+    }
+  }
+
+  // Footer Menu Widget
+  &.widget_nav_menu {
+    ul {
+      margin-top: -5px;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+
+    li {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      padding-bottom: 11px;
+
+      &:last-child {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      a {
+        color: $white;
+        text-transform: capitalize;
+        font-size: 16px;
+        @include transition;
+        position: relative;
+        font-family: $roboto-font;
+
+        &:hover {
+          @include transition;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  // Footer Contact Widget
+  .footer-widget-contact {
+    @include sm {
+      padding-right: 50px;
+    }
+    @include md {
+      padding-right: 50px;
+    }
+    @include xl {
+      padding-right: 50px;
+    }
+    p {
+      color: $white;
+      font-family: $roboto-font;
+    }
+    .footer-contact ul {
+      list-style: none;
+
+      li {
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        line-height: 30px;
+        gap: 6px;
+
+        &:first-child {
+          align-items: flex-start;
+          .contact-icon {
+            margin-top: 5px;
+          }
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .contact-icon {
+          color: $white;
+          border-radius: 50px;
+          float: left;
+          display: flex;
+          align-items: center;
+          flex-shrink: 0;
+        }
+        .contact-text {
+          color: $white;
+          font-size: 16px;
+          line-height: 30px;
+          overflow: hidden;
+          font-family: $roboto-font;
+
+          a {
+            &:hover {
+              span {
+                color: $primary-color;
+                @include transition;
+              }
+            }
+          }
+          span,
+          p,
+          a {
+            color: $white;
+            font-size: 16px;
+            line-height: 30px;
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 0;
+            font-family: $roboto-font;
+            @include transition;
+          }
+        }
+      }
+    }
+  }
+
+  // Footer Latest News
+  .widget_latest_post {
+    ul {
+      li {
+        .latest-post-thumb {
+          width: 60px;
+          height: 60px;
+        }
+        .latest-post-desc {
+          .latest-post-title {
+            margin-bottom: 8px;
+            font-size: 16px;
+            line-height: 22px;
+            color: $white;
+            font-weight: 600;
+            font-family: $roboto-font;
+
+            a {
+              font-size: 16px;
+              line-height: 22px;
+              color: $white;
+              position: relative;
+              text-transform: capitalize;
+              font-weight: 600;
+              font-family: $roboto-font;
+              @include transition;
+
+              &:hover {
+                color: $primary-color;
+                @include transition;
+              }
+            }
+          }
+          .latest-post-meta {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            gap: 8px;
+            color: $white;
+            font-family: $roboto-font;
+          }
+        }
+      }
+    }
+  }
+}
+// Footer Top Area
+.footer-top-area {
+  border-bottom: 1px solid #FFFFFF26;
+}
+.footer-top-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include rmaxwd(991) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 80px 0;
+  }
+  .title-wrapper {
+    .title {
+      margin-bottom: 0;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 30px;
+      color: $white;
+    }
+  }
+  .logo-wrapper {
+    height: 136px;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    padding: 0 52px;
+  }
+  .cta-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: $heading-font;
+
+    @include sm {
+      flex-direction: column;
+    }
+    @include md {
+      flex-direction: column;
+    }
+    @include lg {
+      flex-direction: column;
+    }
+    .title,
+    a {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 30px;
+      color: $white;
+      font-family: $heading-font;
+    }
+    a {
+      color: $primary-color;
+      font-weight: 300;
+      border-bottom: 1px solid $primary-color;
+    }
+  }
+}
+// Footer Bottom Section
+.footer-bottom-area {
+  padding: 24px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+  @include rmaxwd(991) {
+    padding: 30px 0;
+  }
+
+ .footer-bottom-wrapper {
+    text-align: center;
+  }
+  .copyright-text {
+    p {
+      color: $white;
+      margin-bottom: 0;
+      font-family: $roboto-font;
+      font-size: 16px;
+      a {
+        color: $white;
+        font-weight: 400;
+        font-family: $roboto-font;
+        font-size: 16px;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+  .credit-text {
+    p {
+      color: $white;
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+      font-family: $roboto-font;
+    }
+    a {
+      color: $primary-color;
+      font-family: $roboto-font;
+    }
+  }
+}

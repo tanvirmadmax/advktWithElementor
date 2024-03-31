@@ -1,0 +1,36 @@
+.info-card {
+    &.style-3 {
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+        border-radius: 0;
+
+        .title-wrapper {
+            flex-direction: row;
+            align-items: center;
+            gap: 27px;
+            .icon {
+                width: auto;
+                height: auto;
+            }
+            .title {
+                color: $white;
+                font-size: 21px;
+                line-height: 33px;
+
+                br {
+                    @include rmaxwd(991) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .content {
+            .desc {
+                font-size: 18px;
+                font-family: $roboto-font;
+                color: rgb(187, 197, 214);
+            }
+        }
+    }
+}

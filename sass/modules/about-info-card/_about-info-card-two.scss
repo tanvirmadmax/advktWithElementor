@@ -1,0 +1,49 @@
+//.about-info-card {
+//  &.style-2 {
+//    .about-info-content {
+//      display: flex;
+//      flex-direction: column;
+//      gap: 53px;
+//    }
+//  }
+//}
+
+.about-info-card {
+  &.style-2 {
+    display: flex;
+    gap: 24px;
+
+    @include sm {
+      flex-direction: column;
+    }
+    @include md {
+      justify-content: space-between;
+    }
+    .thumbnail {
+      width: 416px;
+      flex-shrink: 0;
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+
+      @include sm {
+        width: 100%;
+        height: 450px;
+      }
+      @include md {
+        width: 360px;
+      }
+
+      img {
+        top: 0;
+        left: 0;
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1/1;
+        border-radius: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,196 @@
+.portfolio-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-card {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 59px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  cursor: default;
+
+  @include rmaxwd(991) {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  //@include md {
+  //  gap: 30px;
+  //}
+  &:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  &:hover {
+    .counter-number {
+      @include transition;
+      color: $primary-color;
+      -webkit-text-fill-color: $primary-color;
+      -webkit-text-stroke-color: $primary-color;
+    }
+
+    .content {
+      .image {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0%) skewY(0) scaleZ(1) rotate(0);
+        transition: all 0.3s ease-out;
+        z-index: 2;
+
+        @include rmaxwd(991) {
+          transform: unset;
+        }
+      }
+    }
+    .btn-wrapper {
+      .circle-btn {
+        background-color: $primary-color;
+        @include transition;
+      }
+    }
+  }
+
+  .counter-number {
+    font-size: 72px;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $black;
+    line-height: initial;
+    color: $black;
+    position: relative;
+    @include transition;
+
+    &:before {
+      border-radius: 50%;
+      background-color: rgb(232, 232, 245);
+      width: 56px;
+      height: 56px;
+      position: absolute;
+      content: "";
+      bottom: 0;
+      z-index: -1;
+      right: 0;
+    }
+  }
+  .title {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: initial;
+    color: $white;
+    width: 526px;
+    flex-shrink: 0;
+    margin-bottom: 0;
+
+    @include sm {
+      font-size: 24px;
+      width: 100%;
+    }
+    @include md {
+      font-size: 28px;
+      width: 100%;
+    }
+    @include lg {
+      width: 400px;
+    }
+  }
+  .content {
+    flex-grow: 1;
+    position: relative;
+    margin-right: 70px;
+
+    @include rmaxwd(991) {
+      margin-right: 0;
+    }
+    @include lg {
+      margin-right: 0;
+    }
+    .short-title {
+      font-size: 18px;
+      font-weight: 400;
+      color: $white;
+      display: block;
+
+      @include sm {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      @include md {
+        font-size: 18px;
+      }
+      @include lg {
+        font-size: 18px;
+      }
+    }
+    .title {
+      font-size: 60px;
+      font-weight: 600;
+      color: $white;
+      margin-bottom: 0;
+
+      @include sm {
+        font-size: 36px;
+        line-height: 42px;
+      }
+      @include md {
+        font-size: 38px;
+        line-height: 48px;
+      }
+      @include lg {
+        font-size: 42px;
+        line-height: 50px;
+      }
+
+      a {
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+    .image {
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      transform-origin: top center;
+      transform: scale(0.75);
+      right: -60px;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.3s ease-out;
+
+      @include rmaxwd(991) {
+        position: unset;
+        transform: unset;
+        visibility: visible;
+        opacity: 1;
+        margin-top: 40px;
+        right: 0;
+      }
+      //@include md {
+      //  width: 280px;
+      //  right: 0;
+      //}
+      @include lg {
+        right: 0;
+      }
+      @include xl {
+        right: 0;
+      }
+    }
+  }
+  .btn-wrapper {
+    .circle-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        width: 64px;
+        height: 64px;
+        background-color: $black-50;
+        border-radius: 50px;
+        font-size: 29px;
+        color: $white;
+        @include transition;
+    }
+  }
+}

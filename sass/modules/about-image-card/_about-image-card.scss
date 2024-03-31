@@ -1,0 +1,106 @@
+.about-image-card {
+  //@include rmaxwd(991) {
+  //  margin-bottom: 70px;
+  //}
+  .main-img-wrapper {
+    display: inline-block;
+
+    .main-img-inner {
+      position: relative;
+      display: inline-block;
+
+      > img {
+
+        @include rmaxwd(767) {
+          width: 100%;
+        }
+      }
+
+      .image-two {
+        transform: translateX(-50%);
+        margin-top: -90px;
+        position: relative;
+      }
+
+      .image-shape {
+        position: absolute;
+        right: 50px;
+        bottom: 20px;
+
+        @include rmaxwd(1399) {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+    .company-label-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $white;
+      padding-right: 15px;
+      padding-bottom: 22px;
+    }
+    .company-label {
+      width: 182px;
+      height: 182px;
+      background-color: $primary-color;
+      border-radius: 50%;
+      position: relative;
+
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .counter-wrapper {
+        .number {
+          font-size: 40px;
+          font-weight: 600;
+          line-height: 29px;
+          color: $black;
+          display: flex;
+          align-items: center;
+
+          .prefix {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    .company-info {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px 10px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      padding-right: 25px;
+
+      .single-info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .title {
+          margin-bottom: 0;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 30px;
+          color: $black;
+        }
+        .sub-title {
+          margin-bottom: 0;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: initial;
+          color: $text-color;
+        }
+      }
+    }
+  }
+}

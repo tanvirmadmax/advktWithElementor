@@ -1,0 +1,41 @@
+// .nav-tab {
+//     list-style: none;
+//     padding-left: 0;
+//     display: inline-flex;
+//     flex-direction: column;
+
+//     @include rmaxwd(1199) {
+//         flex-direction: row;
+//         width: 100%;
+//         flex-wrap: wrap;
+//     }
+
+//     li {
+//         position: relative;
+//         color: $black;
+//         font-family: $heading-font;
+//         font-size: 21px;
+//         line-height: 20px;
+//         padding: 23px 40px;
+//         font-weight: 600;
+//         cursor: pointer;
+//         border-radius: 50px;
+//         display: flex !important;
+//         align-items: center;
+//         gap: 20px;
+
+//         @include sm {
+//             padding: 18px 20px;
+//         }
+//         @include rmaxwd(1199) {
+//             flex-grow: 1;
+//             justify-content: center;
+//         }
+//         i {
+//             color: $primary-color;
+//         }
+//         &.active {
+//             background-color: rgb(232, 232, 245);
+//         }
+//     }
+// }

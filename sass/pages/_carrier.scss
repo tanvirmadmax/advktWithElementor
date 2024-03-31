@@ -1,0 +1,129 @@
+
+
+//Carrier Page Style
+.carrier-page {
+    padding-top: 165px;
+    padding-bottom: 140px;
+
+    @include md {
+        padding: 100px 0;  
+    }
+    @include sm {
+        padding: 80px 0;
+    }
+}
+.carrier-page-area {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: 6px;
+}
+.carrier-info {
+    position: relative;
+    .title {
+        font-size: 45px;
+        font-weight: 400;
+        line-height: initial;
+        color: $black;
+        text-transform: initial;
+        margin-bottom: 0;
+        @include sm {
+            font-size: 26px;
+        }
+        @include md {
+            font-size: 38px;
+        }
+        @include lg {
+            font-size: 40px;
+        }
+    }
+    .desc {
+        margin-top: 30px;
+        color: $black;
+        font-size: 18px;
+        line-height: initial;
+        margin-bottom: 0;
+    }
+    .submit-btn {
+        color: $white;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: initial;
+        padding: 10px 25px;
+        background-color: $primary-color;
+        margin-top: 30px;
+        display: inline-flex;
+    }
+
+}
+
+.portfolio-slider-area {
+    padding-top: 10px;
+    padding-bottom: 140px;
+
+    @include md {
+        padding-bottom: 0;
+    }
+    @include sm {
+        padding-bottom: 0;
+    }
+    .section-title {
+        margin-bottom: 60px;
+    }
+    .sec-content {
+        gap: 24px;
+    }
+}
+.portfolio-slider {
+    
+    .slick-list {
+        margin: 0 10px;
+
+        .slick-slide {
+            margin: 0 10px;
+        }
+    }
+}
+
+.faq-area-style {
+    padding-top: 123px;
+    padding-bottom: 110px;
+    position: relative;
+    overflow: hidden;
+
+    @include md {
+        padding-top: 100px;
+        padding-bottom: initial;
+    }
+    @include sm {
+        padding-top: 80px ;
+        padding-bottom: initial;
+    }
+
+    .faq-bg {
+        position: absolute;
+        right: -9px;
+        top: 10px;
+        z-index: 1;
+
+        @include xs {
+            display: none;
+        }
+
+        @include sm {
+            width: 200px;
+        }
+        @include md {
+            width: 250px;
+        }
+    }
+    .accordion-box-wrapper {
+        height: auto;
+    }
+    .faq-area {
+        padding-bottom: initial;
+        .faq-gallery-thumb {
+            background-color: $primary-color;
+        }
+    }
+}

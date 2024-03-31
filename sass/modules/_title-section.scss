@@ -1,0 +1,121 @@
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 74px;
+  gap: 20px;
+
+  @include sm {
+    flex-direction: column;
+    margin-bottom: 60px;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+
+  .shape {
+    position: relative;
+    img {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+ 
+  .sec-content {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    z-index: 2;
+    position: relative;
+    margin-top: -8px;
+
+    @include rmaxwd(550) {
+      width: 100%;
+    }
+    .sec-desc {
+      p {
+        br {
+          @include md {
+            display: none;
+          }
+          @include sm {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .short-title {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: $body-font;
+    color: #808080;
+  }
+  .title {
+    font-size: 60px;
+    line-height: initial;
+    font-weight: 600;
+    font-family: $heading-font;
+    color: $black;
+    margin-bottom: 0;
+
+    @include xl {
+      font-size: 50px;
+      line-height: 62px;
+    }
+
+    @include lg {
+      font-size: 46px;
+      line-height: 62px;
+    }
+    @include nesthub {
+      font-size: 46px;
+    }
+    @include md {
+      font-size: 38px;
+      line-height: 48px;
+    }
+    @include sm {
+      font-size: 32px;
+      line-height: 42px;
+    }
+    @media only screen and (min-width: 0px) and (max-width: 439px){
+      br {
+        display: none;
+      }
+    }
+  }
+  .sec-desc {
+    flex-shrink: 0;
+    font-size: 18px;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    .theme-btn {
+      background-color: transparent;
+      padding: 10px;
+      gap: 24px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: initial;
+      color: $black;
+      border: 1px solid #3F3F3F;
+      border-radius: 5px;
+      flex-shrink: 0;
+
+      i{
+        font-size: 20px;
+      }
+  
+
+      &:hover {
+        background-color: $primary-color;
+        color: $white;
+        @include transition;
+      }
+    }
+  }
+}

@@ -1,0 +1,333 @@
+// About Us
+.about-us-area {
+  
+  &.style-2 {
+    padding: 120px 0;
+
+    @include sm {
+      padding: 80px 0;
+    }
+    @include md {
+      padding: 100px 0;
+    }
+    .section-title {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+// Modal Area
+.video-popup-area {
+  position: relative;
+  margin-top: -240px;
+
+  @include sm {
+    margin-top: 0;
+    padding-top: 80px;
+  }
+  @include md {
+    margin-top: 0;
+    padding-top: 100px;
+  }
+  @include lg {
+    margin-top: 0;
+    padding-top: 120px;
+  }
+
+  .video-popup-wrapper {
+    position: relative;
+
+    .get-quot-form {
+      padding: 0 40px;
+      margin-top: -150px;
+
+      @include sm {
+        margin-top: -60px;
+        padding: 0 20px;
+      }
+      @include md {
+        padding: 0 20px;
+      }
+      @include lg {
+        padding: 0 20px;
+      }
+    }
+    .comment-respond.style-2 .comment-respond-wrapper {
+      margin-left: 0;
+      padding: 60px 70px;
+
+      @include sm{
+        padding: 35px 25px;
+      }
+      @include md {
+        padding: 40px 30px;
+      }
+      @include lg {
+        padding: 50px 45px;
+      }
+      &:before {
+        width: 100%;
+        border-radius: 10px;
+        margin-right: 0;
+      }
+
+      .single-input-field {
+        .btn {
+          border-radius: initial;
+          font-size: 18px;
+          font-weight: 500;
+          padding: 22px 50px;
+          width: 100%;
+          color: $white;
+          background: $primary-color;
+        }
+      }
+    }
+  }
+  .shape {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    @include sm {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+// Process Step Area
+.process-step-area {
+  &.style-1 {
+    padding-top: 120px;
+    padding-bottom: 370px;
+
+    @include sm {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    @include md {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    @include lg {
+      padding-bottom: 120px;
+    }
+  }
+}
+
+// Portfolio Area
+.portfolio-bg-area {
+  padding-top: 140px;
+  padding-bottom: 324px;
+  position: relative;
+  z-index: 1;
+  background-color: $black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  .overlay {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    background-color: $black;
+    opacity: 0.95;
+  }
+  .shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.05;
+  }
+}
+.portfolio-filter-area {
+  margin-top: -400px;
+  position: relative;
+  z-index: 2;
+  padding-bottom: 24px;
+}
+
+// Faq Gallery Area
+.faq-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+
+  @include sm {
+    grid-template-columns: 1fr 2fr;
+  }
+  @include xs {
+    grid-template-columns: 1fr;
+  }
+  [data-item="1"] {
+    grid-row: span 2;
+    margin-left: -430px;
+
+    @include xs {
+      margin-left: unset;
+    }
+    .faq-gallery-wrapper {
+      height: 100%;
+      @include xs {
+        height: 350px;
+      }
+
+      .faq-gallery-thumb {
+        border-radius: 0;
+      }
+    }
+  }
+  .faq-gallery-wrapper {
+    height: 250px;
+    position: relative;
+
+    .shape {
+      position: absolute;
+      right: 2px;
+      z-index: 2;
+      transform: translateY(-50%);
+      top: 100%;
+
+      @include sm {
+        width: 130px;
+      }
+      @include md {
+        width: 150px;
+      }
+    }
+    .faq-gallery-thumb {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      border-radius: 5px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        aspect-ratio: 1/1;
+      }
+    }
+    .content-card {
+      background-color: #FAF8F7;
+      border-radius: 5px;
+      padding: 32px 29px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .title {
+        font-size: 20px;
+        font-weight: 600;
+        color: $black;
+        line-height: initial;
+        margin-bottom: 0;
+      }
+      .btn-wrapper {
+        .theme-btn {
+          padding: 9px 17px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+// Company History Area
+.company-history-area {
+  padding-bottom: 140px;
+
+  @include sm {
+    padding-bottom: 100px;
+  }
+  @include md {
+    padding-bottom: 100px;
+  }
+}
+
+// FAQ Area
+.faq-area {
+  &.style-1 {
+    padding-bottom: 190px;
+
+    @include sm {
+      padding-bottom: 100px;
+    }
+    @include md {
+      padding-bottom: 100px;
+    }
+
+    .section-title {
+      margin-bottom: 30px;
+      margin-top: 60px;
+
+      @include xs {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+// Brand Slider
+.brand-marquee-area {
+  &.style-2 {
+    padding: 130px 0;
+
+    @include sm {
+      padding: 80px 0;
+    }
+    @include md {
+      padding: 100px 0;
+    }
+  }
+}
+
+// Testimonial Slider Area
+.testimonial-slider-area {
+  &.style-2 {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+}
+
+// Latest Post Area
+.latest-posts-area {
+  &.style-2 {
+    padding: 140px 0;
+    background-color: #FAF8F7;
+
+    @include sm {
+      padding: 80px 0;
+    }
+    @include md {
+      padding: 100px 0;
+    }
+    .section-title {
+      margin-bottom: 190px;
+    }
+    .post-card {
+      .post-meta {
+        .single-post-meta {
+          .icon {
+            color: $white;
+            border-color: $primary-color;
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}

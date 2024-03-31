@@ -1,0 +1,96 @@
+
+.testimonial-slider-wrapper {
+    .slick-list {
+      margin: 0 -12px;
+      
+    }
+
+    .slick-slide {
+      margin: 0 12px;
+    }
+    .prev-btn {
+        position: absolute;
+        left: -99px;
+        margin-top: 149px;
+    }
+    .next-btn {
+        position: absolute;
+        right: -99px;
+        bottom: 149px;
+    }
+    .prev-btn, .next-btn {
+        color: $gray;
+        background-color: $white;
+        width: 50px;
+        height: 50px;
+        padding: 0;
+    }
+  }
+
+
+.testimonial-card {
+    &.style-2 {
+        padding: 45px 50px 40px 50px;
+        background-color: $white;
+        box-shadow: 0px 4px 30px 0px rgba(214, 214, 214, 0.25);
+        border-radius: 10px;
+
+        @include xs {
+            padding: 40px;
+        }
+        @include sm {
+            width: 100% !important;
+        }
+        .icon-wrapper {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+
+            @include xs {
+                flex-direction: column;
+                gap: 20px;
+                align-items: flex-start;
+            }
+        }
+        .content-wrapper {
+            @include xs {
+                gap: 40px;
+            }
+            .user-info {
+                .image {
+                    box-shadow: initial;
+                }
+                .info {
+                    .name {
+                        margin-bottom: 0;
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 30px !important;
+                    }
+                    .desig {
+                        font-size: 14px;
+                        line-height: 29px;
+                        color: $black;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .content {
+                .text {
+                    font-size: 20px;
+                    color: $black;
+                    line-height: 32px;
+                    font-weight: 400;
+
+                    @include xs {
+                        font-size: 18px;
+                        line-height: 34px;
+                    }
+                }
+            }
+        }
+    }
+
+    
+}

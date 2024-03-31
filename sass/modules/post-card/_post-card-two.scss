@@ -1,0 +1,17 @@
+.post-card {
+    &.style-2 {
+        flex-direction: column;
+        gap: 26px;
+
+        .image {
+            height: 440px;
+
+            @include sm {
+                height: 300px;
+            }
+        }
+        .post-meta {
+            margin-top: 5px;
+        }
+    }
+}

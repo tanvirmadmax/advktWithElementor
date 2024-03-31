@@ -1,0 +1,102 @@
+// Brand Marquee Area
+.brand-marquee-area {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 28px 0;
+
+  gap: 66px;
+  @include rmaxwd(767) {
+    gap: 20px;
+  }
+  .brand-marquee-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    &.first-brand-marquee{
+      animation: Scroll 32s linear infinite;
+    }
+    &.second-brand-marquee{
+      animation: Scroll 32s linear infinite;
+      animation-direction: reverse;
+
+      .single-brand-marquee {
+        .brand-marquee-title {
+          text-transform: uppercase;
+          font-size: 90px;
+
+          @include sm {
+            font-size: 40px;
+          }
+          @include md {
+            font-size: 60px;
+          }
+          @include lg {
+            font-size: 60px;
+          }
+        }
+         &:nth-child(even) {
+           .brand-marquee-title {
+             color: $primary-color;
+             //-webkit-text-fill-color: white;
+             //-webkit-text-stroke-width: 1px;
+             //-webkit-text-stroke-color: $black;
+
+           }
+         }
+      }
+    }
+  }
+  .single-brand-marquee {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    // &:nth-child(even) {
+    //   .brand-marquee-title {
+    //     color: #dedeed;
+    //   }
+    // }
+    // &:last-child {
+    //   .brand-marquee-star {
+    //     display: none;
+    //   }
+    // }
+    .brand-marquee-title {
+      font-family: $heading-font;
+      font-size: 35px;
+      color: $black;
+      font-weight: 800;
+      text-transform: capitalize;
+      line-height: initial;
+      white-space: nowrap;
+      letter-spacing: 7px;
+
+      // @include sm {
+      //   font-size: 62px;
+      //   line-height: 62px;
+      // }
+      // @include md {
+      //   font-size: 80px;
+      //   line-height: 80px;
+      // }
+      // @include lg {
+      //   font-size: 95px;
+      //   line-height: 75px;
+      // }
+      // @include xl {
+      //   font-size: 100px;
+      //   line-height: 80px;
+      // }
+    }
+    .brand-marquee-star {
+      font-size: 28px;
+      font-weight: 800;
+      color: $black;
+      white-space: nowrap;
+    }
+  }
+}

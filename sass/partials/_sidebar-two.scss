@@ -1,0 +1,225 @@
+.service-sidebar {
+   
+
+    @include rmaxwd(767) {
+        margin-top: 56px ;
+        padding-bottom: 80px;
+    }
+    @include md {
+        padding-bottom: 100px;
+    }
+    @include lg {
+        padding-bottom: 120px;
+    }
+    .widget {
+        margin-bottom: 60px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.widget_contact_form {
+    .comment-respond {
+        padding: 0;
+        border: 0;
+        margin: 0;
+    }
+}
+.widget_service_categories {
+    margin-bottom: 50px;
+    padding: 50px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: #FAF8F7;
+
+    .title {
+        font-size: 35px;
+        font-weight: 600;
+        line-height: initial;
+        color: $black;
+        margin-bottom: 32px;
+        margin-left: 40px;
+    }
+
+    ul {
+
+        li {
+            border-top: 1px solid rgba(0, 0, 0, 0.15);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important;
+            width: 100%;
+            padding: 0;
+            margin-bottom: 10px;
+            a {
+                display: inline-flex;
+                align-items: center;
+                flex-shrink: 0;
+                color: $black;
+                font-family: $heading-font;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 30px;
+                width: 100%;
+                padding: 20px 40px;
+
+                i {
+                    color: $primary-color;
+                    font-size: 24px;
+                    font-weight: 600;
+                    @include transition;
+                }
+                @include sm {
+                    padding: 20px;
+                }
+                &:hover {
+                    background: $blue-color;
+                    color: $white;
+
+                    i {
+                        color: $white;
+                        @include transition;
+                    }
+                }
+            }
+            &.active {
+
+                a {
+                    background: $blue-color;
+                    color: $white;
+
+                    i {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+.widget_service_promotion {
+    position: relative;
+    overflow: hidden;
+
+    .contact-text{
+        position: absolute;
+        bottom: 0;
+        padding: 0 0 30px 40px;
+
+        .number {
+            font-size: 35px;
+            font-weight: 600;
+            line-height: initial;
+            font-family: $heading-font;
+            color: $white;
+        }
+        .text {
+            font-size:  16px;
+            line-height: 29px;
+            color: $white;
+            margin-bottom: 0;
+        }
+    }
+
+    .wp-block-heading {
+        &::before {
+            display: none;
+        }
+        color: $white;
+        font-size: 30px;
+    }
+    .promotion-card {
+        position: relative;
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        .short-desc {
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: $roboto-font;
+        }
+        h4 {
+            color: $white;
+            font-family: $body-font;
+            font-size: 24px;
+            line-height: 36px;
+            font-weight: 600;
+            margin: 0;
+        }
+        .secondary-btn {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+
+            .icon {
+                width: 60px;
+                height: 60px;
+                border-radius: 50px;
+                background: $primary-color;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                font-size: 18px;
+                i {
+                    color: $white;
+                }
+            }
+            .btn-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                p {
+                    margin: 0;
+                    text-align: start;
+                    color: $white;
+                    font-family: $body-font;
+                    font-size: 14px;
+                    line-height: 30px;
+                    font-weight: 400;
+                }
+                h4 {
+                    margin: 0;
+                    text-align: start;
+                    color: $white;
+                    font-family: $heading-font;
+                    font-size: 18px;
+                    line-height: 30px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+.widget_service_brochure {
+    position: relative;
+
+    .button-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .btn-text {
+            color: $white;
+            font-family: $body-font;
+            font-size: 18px;
+            border: 2px solid $primary-color;
+            background-color: $primary-color;
+            line-height: 18px;
+            font-weight: 600;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            padding: 19px 10px;
+
+            &:hover {
+                background-color: $primary-color;
+                color: $white;
+            }
+        }
+        .doc {
+            background-color: transparent;
+            color: $secondary-color;
+        }
+    }
+}
