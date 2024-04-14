@@ -1,9 +1,9 @@
 .section-title {
   // display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   // align-items: center;
   margin-bottom: 74px;
-  gap: 20px;
+  // gap: 20px;
 
   @include sm {
     // flex-direction: column;
@@ -117,5 +117,10 @@
         @include transition;
       }
     }
+  }
+  &.style-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
   }
 }

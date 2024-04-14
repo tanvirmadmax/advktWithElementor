@@ -7671,9 +7671,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 
 .section-title {
-  justify-content: space-between;
   margin-bottom: 74px;
-  gap: 20px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .section-title {
@@ -7787,6 +7785,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   background-color: #CDB091;
   color: #ffffff;
   transition: all 0.5s ease-out;
+}
+.section-title.style-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
 }
 
 .page-breadcrumb-area {
@@ -10929,10 +10932,6 @@ ul.children {
 .contact-area .map-location {
   height: 100%;
 }
-.contact-area .map-location iframe {
-  width: 100%;
-  height: 100%;
-}
 .contact-area .section-title {
   margin-bottom: 30px;
 }
@@ -13266,6 +13265,13 @@ ul.children {
     margin-bottom: 16px;
   }
 }
+.footer-widget .subscribe-form-widget {
+  border-radius: 6px;
+}
+.footer-widget .subscribe-form-widget .single-field input {
+  height: 60px;
+  padding: 8px 12px;
+}
 @media only screen and (min-width: 992px) and (max-width: 1399px) {
   .footer-widget .widget-instagram-feed {
     width: 170px;
@@ -13285,12 +13291,6 @@ ul.children {
   display: flex;
   align-items: center;
   gap: 50px;
-}
-.footer-widget .footer-widget-info .info-form-and-social-icon .subscribe-form-widget {
-  border-radius: 6px;
-}
-.footer-widget .footer-widget-info .info-form-and-social-icon .subscribe-form-widget .single-field input {
-  height: 60px;
 }
 .footer-widget .footer-widget-info .info-form-and-social-icon .social-profile {
   margin-top: 0;
@@ -13534,6 +13534,9 @@ ul.children {
 }
 .footer-bottom-area .copyright-text p a:hover {
   color: #CDB091;
+}
+.footer-bottom-area .footer-bottom-menu ul {
+  list-style: none;
 }
 .footer-bottom-area .credit-text p {
   color: #ffffff;

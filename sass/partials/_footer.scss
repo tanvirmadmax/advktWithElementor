@@ -95,6 +95,16 @@
     }
   }
 
+  .subscribe-form-widget {
+    border-radius: 6px;
+    .single-field {
+      input {
+        height: 60px;
+        padding: 8px 12px;
+      }
+    }
+  }
+
   .widget-instagram-feed {
     @media only screen and (min-width: 992px) and (max-width: 1399px) {
       width: 170px;
@@ -117,14 +127,6 @@
       align-items: center;
       gap: 50px;
 
-      .subscribe-form-widget {
-        border-radius: 6px;
-        .single-field {
-          input {
-            height: 60px;
-          }
-        }
-      }
       .social-profile {
         margin-top: 0;
       }
@@ -392,6 +394,11 @@
           color: $primary-color;
         }
       }
+    }
+  }
+  .footer-bottom-menu{
+    ul{
+      list-style: none;
     }
   }
   .credit-text {
