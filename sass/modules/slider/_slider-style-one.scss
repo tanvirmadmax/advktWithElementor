@@ -190,6 +190,20 @@
           gap: 20px;
         }
       }
+      .circle-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        width: 64px;
+        height: 64px;
+        background-color: $black-50;
+        border-radius: 50px;
+        font-size: 29px;
+        color: $white;
+        border: 1px solid $white;
+        @include transition;
+    }
     }
 
     // Slider Feature Image

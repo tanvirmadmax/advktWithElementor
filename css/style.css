@@ -4500,6 +4500,20 @@ body.admin-bar .header-menu-area.sticky_menu {
   align-items: center;
   gap: 20px;
 }
+.slider-area .single-slider .slider-title-wrapper .circle-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  background-color: #1C1D20;
+  border-radius: 50px;
+  font-size: 29px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  transition: all 0.5s ease-out;
+}
 .slider-area .single-slider .slider-feature-image {
   margin-left: -220px;
 }
@@ -7657,17 +7671,13 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 
 .section-title {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 74px;
   gap: 20px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .section-title {
-    flex-direction: column;
     margin-bottom: 60px;
-    align-items: flex-start;
     gap: 30px;
   }
 }
@@ -7768,6 +7778,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   border: 1px solid #3F3F3F;
   border-radius: 5px;
   flex-shrink: 0;
+  margin-top: 10px;
 }
 .section-title .sec-desc .theme-btn i {
   font-size: 20px;
