@@ -95,11 +95,12 @@
     }
     .testimonial-image {
       position: absolute;
-      top: 0;
+      top: -100px;
       left: 0;
       height: 100%;
       width: 32%;
       z-index: -1;
+      height: 700px;
 
       @include rmaxwd(991) {
         width: 100%;

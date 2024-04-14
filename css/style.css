@@ -10685,11 +10685,12 @@ ul.children {
 }
 .testimonial-slider-area.style-1 .testimonial-image {
   position: absolute;
-  top: 0;
+  top: -100px;
   left: 0;
   height: 100%;
   width: 32%;
   z-index: -1;
+  height: 700px;
 }
 @media (max-width: 991px) {
   .testimonial-slider-area.style-1 .testimonial-image {
@@ -13226,6 +13227,9 @@ ul.children {
   margin-bottom: 35px;
   font-weight: 600;
 }
+.footer-widget-title:hover {
+  color: unset;
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .footer-widget-title {
     margin-bottom: 20px;
@@ -13268,6 +13272,9 @@ ul.children {
 }
 .footer-widget .subscribe-form-widget {
   border-radius: 6px;
+}
+.footer-widget .subscribe-form-widget .mc4wp-form-fields {
+  display: flex;
 }
 .footer-widget .subscribe-form-widget .single-field input {
   height: 60px;
