@@ -108,12 +108,12 @@ a:focus {
 }
 a,
 button {
-  color: $primary-color;
+  color: $black;
   outline: medium none;
   @include transition;
 
   &:hover {
-    color: $blue-color;
+    color: $primary-color;
     @include transition;
   }
 }
@@ -250,7 +250,7 @@ input.theme-btn {
     height: 100%;
     width: 0;
     content: "";
-    background-color: $blue-color;
+    background-color: $black;
     z-index: -1;
     transform: skew(45deg);
     @include transition;

@@ -164,7 +164,7 @@ a:focus {
 
 a,
 button {
-  color: #CDB091;
+  color: #1E2E3E;
   outline: medium none;
   transition: all 0.5s ease-out;
 }
@@ -307,7 +307,7 @@ input.theme-btn:before {
   height: 100%;
   width: 0;
   content: "";
-  background-color: #CDB091;
+  background-color: #1E2E3E;
   z-index: -1;
   transform: skew(45deg);
   transition: all 0.5s ease-out;
@@ -13533,6 +13533,9 @@ ul.children {
 }
 .footer-bottom-area .footer-bottom-menu ul {
   list-style: none;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 0;
 }
 .footer-bottom-area .credit-text p {
   color: #ffffff;
