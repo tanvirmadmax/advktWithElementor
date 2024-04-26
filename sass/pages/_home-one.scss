@@ -84,6 +84,7 @@
         top: -19px;
         opacity: 0.2;
         transform: translateX(353px);
+        width: auto;
 
         @include rmaxwd(1850) {
           transform: translateX(0);

@@ -10661,6 +10661,7 @@ ul.children {
   top: -19px;
   opacity: 0.2;
   transform: translateX(353px);
+  width: auto;
 }
 @media (max-width: 1850px) {
   .testimonial-slider-area.style-1 .testimonial-slider .quote-icon {
@@ -13536,6 +13537,9 @@ ul.children {
   display: flex;
   gap: 16px;
   margin-bottom: 0;
+}
+.footer-bottom-area .footer-bottom-menu ul li a {
+  color: #ffffff;
 }
 .footer-bottom-area .credit-text p {
   color: #ffffff;
