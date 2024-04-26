@@ -4023,7 +4023,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .header-area.style-3 .header-wrapper .header-top .header-contact-info {
   padding: 8px 0;
-  gap: 0;
+  gap: 20px;
 }
 .header-area.style-3 .header-wrapper .header-top .header-contact-info span:last-child .contact-info-item .icon {
   background-color: #1E2E3E;
