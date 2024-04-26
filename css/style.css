@@ -13535,6 +13535,7 @@ ul.children {
 .footer-bottom-area .footer-bottom-menu ul {
   list-style: none;
   display: flex;
+  justify-content: end;
   gap: 16px;
   margin-bottom: 0;
 }
