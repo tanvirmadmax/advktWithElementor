@@ -3282,7 +3282,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .header-top .header-social-wrapper {
   display: flex;
-  gap: 84px;
+  gap: 24px;
 }
 @media (max-width: 1549px) {
   .header-top .header-social-wrapper {
@@ -3322,19 +3322,6 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .header-top .header-contact-info span:first-child:before {
   display: none;
-}
-.header-top .header-contact-info span:before {
-  background-color: rgb(255, 255, 255);
-  opacity: 0.361;
-  width: 1px;
-  display: inline-flex;
-  height: 12px;
-  content: "";
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .header-top .header-contact-info span:before {
-    display: none;
-  }
 }
 .header-top .header-contact-info span.contact-info-item {
   gap: 0 10px !important;
