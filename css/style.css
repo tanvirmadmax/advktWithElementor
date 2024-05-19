@@ -9873,6 +9873,16 @@ ul.children {
 .team-area-slider-wrapper .slick-list .slick-slide {
   margin: 0 2.5px;
 }
+.team-area-slider-wrapper .team-slider-btn {
+  position: absolute;
+  bottom: 0;
+}
+.team-area-slider-wrapper .team-slider-btn .prev-btn {
+  right: 50%;
+}
+.team-area-slider-wrapper .team-slider-btn .next-btn {
+  left: 50%;
+}
 .team-area-slider-wrapper .slick-dots {
   z-index: 3;
   padding-left: 0;

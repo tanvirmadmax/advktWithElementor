@@ -9,6 +9,17 @@
       margin: 0 2.5px;
     }
   }
+  // arrow btn
+  .team-slider-btn {
+    position: absolute;
+    bottom: 0;
+    .prev-btn {
+      right: 50%;
+    }
+    .next-btn {
+      left: 50%;
+    }
+  }
   // Slick Dots
   .slick-dots {
     z-index: 3;

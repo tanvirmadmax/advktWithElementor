@@ -247,6 +247,10 @@
       dots: false,
       speed: 1500,
       rtl: false,
+      prevArrow:
+        "<button type='button' class='team-slider-btn prev-btn'><i class='fa fa-arrow-left'></i></button>",
+      nextArrow:
+        "<button type='button' class='team-slider-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
       responsive: [
         {
           breakpoint: 992,
