@@ -4794,7 +4794,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 
 .info-card {
-  background: #1F2732;
+  background: #1f2732;
   padding: 30px;
   border-radius: 10px;
   position: relative;
@@ -4899,6 +4899,9 @@ body.admin-bar .header-menu-area.sticky_menu {
   height: 74px;
   background: transparent;
   border-radius: 10px;
+}
+.info-card .title-wrapper .icon i {
+  font-size: 36px;
 }
 .info-card .title-wrapper .title {
   font-size: 20px;
