@@ -6001,14 +6001,15 @@ body.admin-bar .header-menu-area.sticky_menu {
 .testimonial-slider-wrapper .prev-btn {
   position: absolute;
   left: -99px;
-  margin-top: 149px;
+  bottom: 149px;
 }
 .testimonial-slider-wrapper .next-btn {
   position: absolute;
   right: -99px;
   bottom: 149px;
 }
-.testimonial-slider-wrapper .prev-btn, .testimonial-slider-wrapper .next-btn {
+.testimonial-slider-wrapper .prev-btn,
+.testimonial-slider-wrapper .next-btn {
   color: #31373f;
   background-color: #ffffff;
   width: 50px;
@@ -6103,7 +6104,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   padding: 0;
   width: 10px;
   height: 10px;
-  background-color: #ffffff;
   border-radius: 50px;
   position: relative;
   transition: all 0.5s ease-out;
@@ -9873,6 +9873,40 @@ ul.children {
 .team-area-slider-wrapper .slick-list .slick-slide {
   margin: 0 2.5px;
 }
+.team-area-slider-wrapper .slick-dots {
+  z-index: 3;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 26px;
+  position: relative;
+  text-align: center;
+  line-height: 0;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+}
+.team-area-slider-wrapper .slick-dots li {
+  display: inline-block;
+  line-height: 0;
+  margin: 0;
+  transition: all 0.5s ease-out;
+}
+.team-area-slider-wrapper .slick-dots li button {
+  font-size: 0;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  position: relative;
+  transition: all 0.5s ease-out;
+}
+.team-area-slider-wrapper .slick-dots li.slick-active {
+  transition: all 0.5s ease-out;
+}
+.team-area-slider-wrapper .slick-dots li.slick-active button {
+  transition: all 0.5s ease-out;
+  background-color: #CDB091;
+}
 
 .portfolio-wrapper {
   display: flex;
@@ -12312,6 +12346,7 @@ ul.children {
   line-height: 0;
   gap: 10px;
   display: flex;
+  justify-content: center;
 }
 .client-logo-slider-wrapper .slick-dots li {
   display: inline-block;
@@ -12324,7 +12359,6 @@ ul.children {
   padding: 0;
   width: 10px;
   height: 10px;
-  background-color: #ffffff;
   border-radius: 50px;
   position: relative;
   transition: all 0.5s ease-out;
