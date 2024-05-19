@@ -241,10 +241,10 @@
       infinite: true,
       autoplay: true,
       draggable: true,
-      arrows: false,
+      arrows: true,
       slidesToScroll: 1,
       loop: true,
-      dots: false,
+      dots: true,
       speed: 1500,
       rtl: false,
       prevArrow:
