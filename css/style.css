@@ -9943,6 +9943,7 @@ ul.children {
 }
 .portfolio-card:first-child {
   border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 0;
 }
 .portfolio-card:hover .counter-number {
   transition: all 0.5s ease-out;
