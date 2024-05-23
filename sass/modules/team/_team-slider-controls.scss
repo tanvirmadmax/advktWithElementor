@@ -10,16 +10,16 @@
     }
   }
   // arrow btn
-  .slick-arrow{
-    position: absolute;
-    bottom: 0;
-    .prev-btn {
-      right: 50%;
-    }
-    .next-btn {
-      left: 50%;
-    }
-  }
+  // .slick-arrow{
+  //   position: absolute;
+  //   bottom: 0;
+  //   .prev-btn {
+  //     right: 50%;
+  //   }
+  //   .next-btn {
+  //     left: 50%;
+  //   }
+  // }
   // Slick Dots
   .slick-dots {
     z-index: 3;
@@ -58,13 +58,14 @@
       }
     }
   }
-  .team-slider-btn{
+  .slick-arrow{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     bottom: unset;
     &.prev-btn{
       left: 0;
+      z-index: 1;
     }
     &.next-btn{
       right: 0;

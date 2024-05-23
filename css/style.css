@@ -9978,16 +9978,6 @@ ul.children {
 .team-area-slider-wrapper .slick-list .slick-slide {
   margin: 0 2.5px;
 }
-.team-area-slider-wrapper .slick-arrow {
-  position: absolute;
-  bottom: 0;
-}
-.team-area-slider-wrapper .slick-arrow .prev-btn {
-  right: 50%;
-}
-.team-area-slider-wrapper .slick-arrow .next-btn {
-  left: 50%;
-}
 .team-area-slider-wrapper .slick-dots {
   z-index: 3;
   padding-left: 0;
@@ -10022,16 +10012,17 @@ ul.children {
   transition: all 0.5s ease-out;
   background-color: #CDB091;
 }
-.team-area-slider-wrapper .team-slider-btn {
+.team-area-slider-wrapper .slick-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   bottom: unset;
 }
-.team-area-slider-wrapper .team-slider-btn.prev-btn {
+.team-area-slider-wrapper .slick-arrow.prev-btn {
   left: 0;
+  z-index: 1;
 }
-.team-area-slider-wrapper .team-slider-btn.next-btn {
+.team-area-slider-wrapper .slick-arrow.next-btn {
   right: 0;
 }
 
