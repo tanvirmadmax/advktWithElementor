@@ -1,87 +1,124 @@
 //contact us page style
 .contact-page {
-    margin-top: 18px;
-    padding-bottom: 88px;
-    position: relative;
+  margin-top: 18px;
+  padding-bottom: 88px;
+  position: relative;
+
+  @include sm {
+    padding-bottom: 0px;
+  }
+  @include md {
+    padding-bottom: 0px;
+  }
+
+  .address-wrapper {
+    padding-top: 158px;
+    padding-bottom: 197px;
 
     @include sm {
-        padding-bottom: 0px ;
+      padding-top: 80px;
+      padding-bottom: 80px;
     }
     @include md {
-        padding-bottom: 0px ;
+      padding-top: 100px;
+      padding-bottom: 56px;
+    }
+  }
+  .address-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: unset;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  .contact-info-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 54px;
+    position: relative;
+    z-index: 1;
+
+    @include sm {
+      margin-bottom: 44px;
+    }
+    @include md {
+      margin-bottom: 44px;
     }
 
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 30px;
+      margin-bottom: 10px;
+      text-transform: capitalize;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 0;
+      font-family: "Syne", sans-serif;
 
-    .address-wrapper {
-        padding-top:158px;
-        padding-bottom: 197px;
+      li {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 29px;
+        color: $black;
 
-        @include sm {
-            padding-top: 80px;
-            padding-bottom: 80px;
+        a {
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 29px;
+          color: $black;
         }
-        @include md {
-            padding-top: 100px;
-            padding-bottom: 56px;
-        }
-      
+      }
     }
-    .address-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: unset;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
-    }
-    .contact-info-card {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 54px;
+  }
+  .image {
+    padding-top: 22px;
+  }
+}
+.client-logo-slider-wrapper {
+  .slick-dots {
+    z-index: 3;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 26px;
+    position: relative;
+    text-align: center;
+    line-height: 0;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+
+    li {
+      display: inline-block;
+      line-height: 0;
+      margin: 0;
+      @include transition;
+
+      button {
+        font-size: 0;
+        padding: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50px;
         position: relative;
-        z-index: 1;
+        @include transition;
+      }
+      &.slick-active {
+        @include transition;
 
-        @include sm {
-            margin-bottom: 44px;
+        button {
+          @include transition;
+          background-color: $primary-color;
         }
-        @include md {
-            margin-bottom: 44px;
-        }
-
-        .title {
-            font-size: 20px;
-            font-weight: 600;
-            line-height: 30px;
-            margin-bottom: 10px;
-            text-transform: capitalize;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            margin-bottom: 0;
-            font-family: "Syne", sans-serif;
-
-            li {
-                font-size: 16px;
-                font-weight: 600;
-                line-height: 29px;
-                color: $black;
-
-                a {
-                    text-decoration: none;
-                    font-size: 16px;
-                    font-weight: 600;
-                    line-height: 29px;
-                    color: $black;
-                }
-            }
-        }
+      }
     }
-    .image {
-        padding-top: 22px;
-    }
+  }
 }

@@ -1,116 +1,125 @@
 .process-step-wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 
-    @include sm {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 60px 15px;
-    }
-    @include md {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 60px 15px;
-    }
-    @include lg {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 60px 15px;
-    }
+  @include sm {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 60px 15px;
+  }
+  @include md {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 15px;
+  }
+  @include lg {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 15px;
+  }
 }
 .process-step {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 35px;
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 35px;
+  padding: 0;
 
-    &:hover {
-        .icon {
-            img {
-                transform: rotateY(360deg);
-                @include transition;
-            }
-        }
-        .divider {
-            span {
-                background-color: $primary-color;
-                @include transition;
-            }
-        }
-        .content {
-            .read-more-btn {
-                visibility: visible;
-                opacity: 1;
-                transform: rotate(-45deg) scale(1);
-                @include transition;
-            }
-        }
-    }
-
+  &:hover {
     .icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        z-index: 2;
+      img {
+        transform: rotateY(360deg);
+        @include transition;
+      }
     }
     .divider {
-        position: relative;
-        height: 1px;
-        background-image: linear-gradient(90deg, #525252, #525252 50%, transparent 50%, transparent 100%);
-        background-size: 20px 1px;
-        width: calc(100% + 30px);
-
-        @include sm {
-            width: calc(100% + 0px);
-        }
-        span {
-            width: 14px;
-            height: 14px;
-            border: 3px solid $white;
-            border-radius: 50px;
-            position: absolute;
-            content: "";
-            left: 50%;
-            transform: translate(-50%, -50%);
-            @include transition;
-        }
+      span {
+        background-color: $primary-color;
+        @include transition;
+      }
     }
     .content {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        padding: 0 30px;
-        align-items: center;
-
-        .title {
-            margin: 0;
-            font-size: 20px;
-            line-height: 30px;
-            font-weight: 600;
-            color: $white;
-        }
-        .desc {
-            margin: 0;
-            font-size: 16px;
-            line-height: 30px;
-            font-weight: 400;
-            color: $white;
-            font-family: $roboto-font;
-        }
-        .read-more-btn {
-            width: 25px;
-            height: 25px;
-            background-color: $primary-color;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            color: $black;
-            font-size: 14px;
-            transform: rotate(-0deg) scale(0.35);
-            visibility: hidden;
-            opacity: 0;
-            @include transition;
-        }
+      .read-more-btn {
+        visibility: visible;
+        opacity: 1;
+        transform: rotate(-45deg) scale(1);
+        @include transition;
+      }
     }
+  }
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    i {
+      font-size: 36px;
+    }
+  }
+  .divider {
+    position: relative;
+    height: 1px;
+    background-image: linear-gradient(
+      90deg,
+      #525252,
+      #525252 50%,
+      transparent 50%,
+      transparent 100%
+    );
+    background-size: 20px 1px;
+    width: calc(100% + 30px);
+
+    @include sm {
+      width: calc(100% + 0px);
+    }
+    span {
+      width: 14px;
+      height: 14px;
+      border: 3px solid $white;
+      border-radius: 50px;
+      position: absolute;
+      content: "";
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @include transition;
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 30px;
+    align-items: center;
+
+    .title {
+      margin: 0;
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 600;
+      color: $white;
+    }
+    .desc {
+      margin: 0;
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: 400;
+      color: $white;
+      font-family: $roboto-font;
+    }
+    .read-more-btn {
+      width: 25px;
+      height: 25px;
+      background-color: $primary-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: $black;
+      font-size: 14px;
+      transform: rotate(-0deg) scale(0.35);
+      visibility: hidden;
+      opacity: 0;
+      @include transition;
+    }
+  }
 }
