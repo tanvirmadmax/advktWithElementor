@@ -58,4 +58,16 @@
       }
     }
   }
+  .team-slider-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: unset;
+    &.prev-btn{
+      left: 0;
+    }
+    &.next-btn{
+      right: 0;
+    }
+  }
 }

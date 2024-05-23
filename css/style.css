@@ -6187,6 +6187,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   line-height: 0;
   gap: 10px;
   display: flex;
+  justify-content: center;
 }
 .testimonial-slider-wrapper .slick-dots li {
   display: inline-block;
@@ -10020,6 +10021,18 @@ ul.children {
 .team-area-slider-wrapper .slick-dots li.slick-active button {
   transition: all 0.5s ease-out;
   background-color: #CDB091;
+}
+.team-area-slider-wrapper .team-slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: unset;
+}
+.team-area-slider-wrapper .team-slider-btn.prev-btn {
+  left: 0;
+}
+.team-area-slider-wrapper .team-slider-btn.next-btn {
+  right: 0;
 }
 
 .portfolio-wrapper {
