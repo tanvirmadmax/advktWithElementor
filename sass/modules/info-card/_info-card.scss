@@ -44,7 +44,7 @@
                 height: 0;
                 @include transition;
 
-                img {
+                i,img {
                     transform: rotateY(360deg) scale(0);
                     @include transition;
                 }

@@ -4920,7 +4920,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   height: 0;
   transition: all 0.5s ease-out;
 }
-.info-card:hover .title-wrapper .icon img {
+.info-card:hover .title-wrapper .icon i, .info-card:hover .title-wrapper .icon img {
   transform: rotateY(360deg) scale(0);
   transition: all 0.5s ease-out;
 }
