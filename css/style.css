@@ -10951,6 +10951,57 @@ ul.children {
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
+.client-logo-slider-wrapper {
+  position: relative;
+}
+.client-logo-slider-wrapper .slick-dots {
+  z-index: 3;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 26px;
+  position: relative;
+  text-align: center;
+  line-height: 0;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+}
+.client-logo-slider-wrapper .slick-dots li {
+  display: inline-block;
+  line-height: 0;
+  margin: 0;
+  transition: all 0.5s ease-out;
+}
+.client-logo-slider-wrapper .slick-dots li button {
+  font-size: 0;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  position: relative;
+  transition: all 0.5s ease-out;
+}
+.client-logo-slider-wrapper .slick-dots li.slick-active {
+  transition: all 0.5s ease-out;
+}
+.client-logo-slider-wrapper .slick-dots li.slick-active button {
+  transition: all 0.5s ease-out;
+  background-color: #CDB091;
+}
+.client-logo-slider-wrapper .client-slider-btn {
+  position: absolute;
+}
+.client-logo-slider-wrapper .client-slider-btn.prev-btn {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.client-logo-slider-wrapper .client-slider-btn.next-btn {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .contact-area {
   padding-bottom: 140px;
   position: relative;
@@ -12448,41 +12499,6 @@ ul.children {
 }
 .contact-page .image {
   padding-top: 22px;
-}
-
-.client-logo-slider-wrapper .slick-dots {
-  z-index: 3;
-  padding-left: 0;
-  margin-bottom: 0;
-  margin-top: 26px;
-  position: relative;
-  text-align: center;
-  line-height: 0;
-  gap: 10px;
-  display: flex;
-  justify-content: center;
-}
-.client-logo-slider-wrapper .slick-dots li {
-  display: inline-block;
-  line-height: 0;
-  margin: 0;
-  transition: all 0.5s ease-out;
-}
-.client-logo-slider-wrapper .slick-dots li button {
-  font-size: 0;
-  padding: 0;
-  width: 10px;
-  height: 10px;
-  border-radius: 50px;
-  position: relative;
-  transition: all 0.5s ease-out;
-}
-.client-logo-slider-wrapper .slick-dots li.slick-active {
-  transition: all 0.5s ease-out;
-}
-.client-logo-slider-wrapper .slick-dots li.slick-active button {
-  transition: all 0.5s ease-out;
-  background-color: #CDB091;
 }
 
 .contact-form-area {
