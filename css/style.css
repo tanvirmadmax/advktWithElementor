@@ -6087,29 +6087,37 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-family: "Jost", sans-serif;
 }
 
+.testimonial-slider-wrapper:hover .slick-arrow {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease-out;
+}
 .testimonial-slider-wrapper .slick-list {
   margin: 0 -12px;
 }
 .testimonial-slider-wrapper .slick-slide {
   margin: 0 12px;
 }
-.testimonial-slider-wrapper .prev-btn {
+.testimonial-slider-wrapper .slick-arrow {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #31373f;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+.testimonial-slider-wrapper .slick-arrow.prev-btn {
   position: absolute;
   left: -99px;
   bottom: 149px;
 }
-.testimonial-slider-wrapper .next-btn {
+.testimonial-slider-wrapper .slick-arrow.next-btn {
   position: absolute;
   right: -99px;
   bottom: 149px;
-}
-.testimonial-slider-wrapper .prev-btn,
-.testimonial-slider-wrapper .next-btn {
-  color: #31373f;
-  background-color: #ffffff;
-  width: 50px;
-  height: 50px;
-  padding: 0;
 }
 
 .testimonial-card.style-2 {
@@ -10970,6 +10978,11 @@ ul.children {
 .client-logo-slider-wrapper {
   position: relative;
 }
+.client-logo-slider-wrapper:hover .slick-arrow {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease-out;
+}
 .client-logo-slider-wrapper .slick-dots {
   z-index: 3;
   padding-left: 0;
@@ -11006,14 +11019,24 @@ ul.children {
 }
 .client-logo-slider-wrapper .slick-arrow {
   position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #31373f;
+  color: #ffffff;
+  padding: 0;
+  border-radius: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-out;
 }
 .client-logo-slider-wrapper .slick-arrow.prev-btn {
-  left: 0;
+  left: 10px;
   top: 50%;
+  z-index: 1;
   transform: translateY(-50%);
 }
 .client-logo-slider-wrapper .slick-arrow.next-btn {
-  right: 0;
+  right: 10px;
   top: 50%;
   transform: translateY(-50%);
 }

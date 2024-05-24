@@ -321,6 +321,13 @@
 // 
 .client-logo-slider-wrapper {
   position: relative;
+  &:hover{
+    .slick-arrow{
+      visibility: visible;
+      opacity: 1;
+      @include transition;
+    }
+  }
   .slick-dots {
     z-index: 3;
     padding-left: 0;
@@ -360,13 +367,23 @@
   }
   .slick-arrow{
     position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: $gray;
+    color: $white;
+    padding: 0;
+    border-radius: 10px;
+    visibility: hidden;
+    opacity: 0;
+    @include transition;
     &.prev-btn{
-      left: 0;
+      left: 10px;
       top: 50%;
+      z-index: 1;
       transform: translateY(-50%);
     }
     &.next-btn{
-      right: 0;
+      right: 10px;
       top: 50%;
       transform: translateY(-50%);
     }
