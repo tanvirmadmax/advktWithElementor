@@ -10971,10 +10971,6 @@ ul.children {
   padding-bottom: 59px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
-.portfolio-area.style-1 .portfolio-card:first-child {
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-}
-
 .client-logo-slider-wrapper {
   position: relative;
 }
