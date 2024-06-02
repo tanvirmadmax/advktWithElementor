@@ -10771,6 +10771,11 @@ ul.children {
   object-fit: cover;
   aspect-ratio: 1/1;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-slider-area.style-1 .testimonial-image img {
+    display: none;
+  }
+}
 
 .request-form-area {
   margin-top: -90px;
@@ -10886,9 +10891,6 @@ ul.children {
   .cta-area .icon-card.style-1 {
     margin-bottom: 20px;
   }
-  .cta-area .icon-card.style-1:last-child {
-    margin-bottom: 0;
-  }
 }
 
 .feature-area.style-1 {
@@ -10932,12 +10934,14 @@ ul.children {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .price-area.style-1 {
-    padding: 80px 0;
+    padding-top: 80px;
+    padding-bottom: 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .price-area.style-1 {
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 0;
   }
 }
 .price-area.style-1 .pricing-bg {
@@ -11070,6 +11074,11 @@ ul.children {
 }
 .contact-area .map-location {
   height: 100%;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .contact-area .map-location {
+    padding-bottom: 60px;
+  }
 }
 .contact-area .section-title {
   margin-bottom: 30px;

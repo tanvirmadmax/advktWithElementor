@@ -115,6 +115,9 @@
         height: 100%;
         object-fit: cover;
         aspect-ratio: 1/1;
+        @include sm{
+          display: none;
+        }
       }
     }
   }
@@ -227,9 +230,6 @@
     &.style-1{
       @include sm{
         margin-bottom: 20px;
-        &:last-child{
-          margin-bottom: 0;
-        }
       }
     }
   }
@@ -276,10 +276,12 @@
     padding: 140px 0;
 
     @include sm {
-      padding: 80px 0;
+      padding-top: 80px;
+      padding-bottom: 0;
     }
     @include md {
-      padding: 100px 0;
+      padding-top: 100px;
+      padding-bottom: 0;
     }
 
     .pricing-bg {
@@ -421,6 +423,9 @@
 
   .map-location {
     height: 100%;
+    @include sm{
+      padding-bottom: 60px;
+    }
   }
   .section-title {
     margin-bottom: 30px;
